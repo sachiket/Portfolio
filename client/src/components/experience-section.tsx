@@ -55,17 +55,35 @@ export default function ExperienceSection() {
                       <div>
                         <h4 className="font-semibold" style={{ color: 'var(--portfolio-secondary)' }}>ADEO / Abu Dhabi Housing Authority</h4>
                         <ul className="text-sm space-y-1 text-gray-700 mt-1">
-                          <li>• Managed 2M+ government records, improved data retrieval by 30%</li>
-                          <li>• Enhanced FAB banking integration for 41,000+ records, 50% performance boost</li>
-                          <li>• Automated 20+ business processes using Camunda workflow management</li>
+                          <li className="flex items-start">
+                            <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
+                            Managed 2M+ government records, improved data retrieval by 30%
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
+                            Enhanced FAB banking integration for 41,000+ records, 50% performance boost
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
+                            Automated 20+ business processes using Camunda workflow management
+                          </li>
                         </ul>
                       </div>
                       <div>
                         <h4 className="font-semibold" style={{ color: 'var(--portfolio-secondary)' }}>BJs Restaurant</h4>
                         <ul className="text-sm space-y-1 text-gray-700 mt-1">
-                          <li>• Developed Order, Cart, and Auth microservices</li>
-                          <li>• Built GraphQL APIs using Nest.js for improved scalability</li>
-                          <li>• Improved system performance by 40% with Redis, MongoDB, and Oracle</li>
+                          <li className="flex items-start">
+                            <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
+                            Developed Order, Cart, and Auth microservices
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
+                            Built GraphQL APIs using Nest.js for improved scalability
+                          </li>
+                          <li className="flex items-start">
+                            <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
+                            Improved system performance by 40% with Redis, MongoDB, and Oracle
+                          </li>
                         </ul>
                       </div>
                     </div>
