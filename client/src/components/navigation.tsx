@@ -16,11 +16,7 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <div className="text-xl font-bold" style={{ color: 'var(--portfolio-secondary)' }}>
-            Sachiket Behera
-          </div>
-          
+        <div className="flex justify-center items-center py-4 relative">
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {[
@@ -45,7 +41,7 @@ export default function Navigation() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden absolute right-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
