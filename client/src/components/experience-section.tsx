@@ -114,11 +114,11 @@ export default function ExperienceSection() {
                         </li>
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
-                          Improved forecasting model accuracy by <strong style={{ color: 'var(--portfolio-accent)' }}>15%</strong> for U.S. defense programs
+                          Improved forecasting model accuracy by 15% for U.S. defense programs
                         </li>
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
-                          Developed OnePDL ETL tool reducing operational delays by <strong style={{ color: 'var(--portfolio-accent)' }}>20%</strong>
+                          Developed OnePDL ETL tool reducing operational delays by 20%
                         </li>
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
