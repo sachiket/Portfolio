@@ -1,5 +1,6 @@
-import { Download, User } from "lucide-react";
+import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@assets/1718277438477_1753779382746.jpeg";
 
 export default function HeroSection() {
   const handleDownloadResume = () => {
@@ -41,11 +42,13 @@ For detailed work experience and education, please visit my portfolio website.
     <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-blue-50 via-white to-green-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center animate-fade-in">
-          {/* Professional headshot placeholder */}
+          {/* Professional headshot */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 to-green-500 p-1">
-            <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-              <User className="w-16 h-16 text-gray-400" />
-            </div>
+            <img 
+              src={profileImage} 
+              alt="Sachiket Behera - Senior Software Engineer"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{ color: 'var(--portfolio-secondary)' }}>
