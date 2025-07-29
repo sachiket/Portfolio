@@ -2,7 +2,17 @@
 
 ## Overview
 
-This is a professional portfolio web application for Sachiket Behera, a Senior Software Engineer. The application is built as a full-stack TypeScript project using a modern React frontend with Express.js backend, showcasing professional experience, skills, and contact information through a clean, responsive interface.
+This is a professional portfolio web application for Sachiket Behera, a Senior Software Engineer. The application is built as a static React TypeScript project with a minimal Express.js backend for serving files. It showcases professional experience, skills, and contact information through a clean, responsive interface with the user's professional photo integrated into the hero section.
+
+## Recent Changes (January 2025)
+
+- Removed contact information from hero section to avoid duplication
+- Updated copyright year from 2024 to 2025
+- Added green checkmarks to all work experience sections for visual consistency
+- Removed user name from navigation bar for cleaner design
+- Converted from database-driven to completely static architecture
+- Integrated user's professional headshot in hero section with circular styling
+- Simplified backend to serve static files only, no API routes needed
 
 ## User Preferences
 
