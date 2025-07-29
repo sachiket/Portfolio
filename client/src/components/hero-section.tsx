@@ -4,38 +4,11 @@ import profileImage from "@assets/1718277438477_1753779382746.jpeg";
 
 export default function HeroSection() {
   const handleDownloadResume = () => {
-    // Create a simple resume download - in a real app, this would download an actual PDF
-    const resumeContent = `
-SACHIKET BEHERA
-Senior Software Engineer
-
-Email: sachiketbehera@gmail.com
-Phone: (+91) 79910-94573
-GitHub: github.com/sachiket
-LinkedIn: linkedin.com/in/sachiket
-
-PROFESSIONAL SUMMARY
-Senior Software Engineer with 5+ years of experience building scalable, Java-based microservices and cloud-native systems using Java, Spring Boot, Docker, and Kubernetes. Delivered AI-driven platforms that accelerated campaign workflows by 50% for clients such as Coke and Kellanova, with expertise in AI technologies like LangChain and LangGraph.
-
-SKILLS
-Programming Languages: Java, JavaScript, TypeScript, Python
-Frameworks & Technologies: Spring Boot, Camunda, GraphQL, Nest.js, Node.js, REST API, Microservices
-Cloud & DevOps Tools: AWS, Docker, Kubernetes, RabbitMQ, Kafka, Redis, Git
-Databases: MongoDB, Oracle
-AI & Agentic Tech: LangChain, LangGraph, MCP servers
-
-For detailed work experience and education, please visit my portfolio website.
-    `;
-    
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Sachiket_Behera_Resume.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    // Open the direct download link for the PDF resume hosted on Google Drive
+    window.open(
+      "https://drive.google.com/uc?export=download&id=1rZZruGDDjaef0vaD4ng2dL_DXCvoCPNc",
+      "_blank"
+    );
   };
 
   return (

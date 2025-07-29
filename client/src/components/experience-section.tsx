@@ -41,7 +41,7 @@ export default function ExperienceSection() {
                         </li>
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
-                          Reduced campaign planning time by <strong style={{ color: 'var(--portfolio-accent)' }}>50%</strong> for clients like Kellanova and Coke
+                          Reduced campaign planning time by 50% for clients like Kellanova and Coke
                         </li>
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 mr-2 mt-1 flex-shrink-0" style={{ color: 'var(--portfolio-accent)' }} />
