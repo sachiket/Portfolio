@@ -56,63 +56,33 @@ export default function ContactSection() {
     <section id="contact" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{ color: 'var(--portfolio-secondary)' }}>
-            Let's Connect
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Contact Info */}
-              <div className="space-y-6 flex flex-col justify-between">
-                <div>
-                  {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-center space-x-4 mb-4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getColorClasses(info.color)}`}>
-                        {info.icon}
-                      </div>
-                      <div>
-                        <p className="font-semibold" style={{ color: 'var(--portfolio-secondary)' }}>{info.title}</p>
-                        <a 
-                          href={info.href}
-                          target={info.href.startsWith('http') ? "_blank" : undefined}
-                          rel={info.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                          className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                        >
-                          {info.value}
-                        </a>
-                      </div>
-                    </div>
-                  ))}
+          <div className="w-full flex justify-center">
+            <Dialog>
+              <DialogTrigger asChild>
+                <span
+                  className="text-2xl md:text-3xl font-bold text-center cursor-pointer transition-transform duration-300 hover:scale-110 inline-block animate-bounce bg-gradient-to-r from-blue-500 via-green-400 to-blue-600 bg-clip-text text-transparent hover:text-white hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-600 hover:shadow-lg px-3 py-1 rounded-lg"
+                  style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                >
+                  Let's Connect
+                </span>
+              </DialogTrigger>
+              <DialogContent style={{ width: '95vw', maxWidth: '700px', padding: 0 }}>
+                <div style={{ width: '100%', minHeight: '500px', display: 'flex', justifyContent: 'center' }}>
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScIYcnrPDHx9SYS6FhkFJsMpDa6qXM5bXTDRLwq38xpB4Pldg/viewform?embedded=true"
+                    width="100%"
+                    height="650"
+                    frameBorder="0"
+                    marginHeight={0}
+                    marginWidth={0}
+                    title="Contact Form"
+                    style={{ borderRadius: '8px', width: '100%', maxWidth: '700px' }}
+                  >
+                    Loading…
+                  </iframe>
                 </div>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Button className="w-full font-semibold mt-8" style={{ backgroundColor: 'var(--portfolio-primary)' }}>
-                      Send a Message
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent>
-                    <DialogHeader>
-                      <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--portfolio-secondary)' }}>Send a Message</h3>
-                    </DialogHeader>
-                    <div style={{ width: '100%', minHeight: '500px' }}>
-                      <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScIYcnrPDHx9SYS6FhkFJsMpDa6qXM5bXTDRLwq38xpB4Pldg/viewform?embedded=true"
-                        width="900"
-                        height="650"
-                        frameBorder="0"
-                        marginHeight={0}
-                        marginWidth={0}
-                        title="Contact Form"
-                        style={{ borderRadius: '8px', maxWidth: '100%' }}
-                      >
-                        Loading…
-                      </iframe>
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </div>
-              {/* Empty right side for layout balance on desktop, or you can add an illustration here if you want */}
-              <div></div>
-            </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>
