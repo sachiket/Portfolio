@@ -6,7 +6,7 @@ export default function HeroSection() {
   const handleDownloadResume = () => {
     // Open the direct download link for the PDF resume hosted on Google Drive
     window.open(
-      "https://drive.google.com/uc?export=download&id=1rZZruGDDjaef0vaD4ng2dL_DXCvoCPNc",
+      "https://drive.google.com/uc?export=download&id=1Vx4HJhhVlzDrtp2wGWLbbVtnboQWao36",
       "_blank"
     );
   };
