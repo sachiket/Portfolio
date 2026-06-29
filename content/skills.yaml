@@ -1,0 +1,40 @@
+categories:
+  - title: Programming Languages
+    icon: code
+    color: blue
+    skills:
+      - Java
+      - JavaScript
+      - TypeScript
+      - Python
+  - title: Frameworks & Tech
+    icon: settings
+    color: green
+    skills:
+      - Spring Boot
+      - Camunda
+      - GraphQL
+      - Nest.js
+      - Node.js
+      - REST API
+      - Microservices
+  - title: Cloud & DevOps
+    icon: cloud
+    color: blue
+    skills:
+      - AWS
+      - Docker
+      - Kubernetes
+      - RabbitMQ
+      - Kafka
+      - Redis
+      - Git
+  - title: AI & Databases
+    icon: bot
+    color: purple
+    skills:
+      - LangChain
+      - LangGraph
+      - MCP Servers
+      - MongoDB
+      - Oracle

@@ -1,40 +1,66 @@
-// Static portfolio website - no database schema needed
-// All content is hardcoded in the frontend components
-
-// Portfolio data types for type safety (if needed in the future)
-export interface PortfolioData {
+export interface Profile {
   name: string;
   title: string;
-  summary: string;
+  tagline: string;
+  resumeUrl: string;
+}
+
+export interface ContactInfo {
+  email: string;
+  phone: string;
+  phoneHref: string;
+  github: string;
+  githubDisplay: string;
+  linkedin: string;
+  linkedinDisplay: string;
+}
+
+export interface SummarySegment {
+  type: "text" | "strong";
+  content: string;
+  color?: "primary" | "accent";
+}
+
+export interface Summary {
+  segments: SummarySegment[];
+}
+
+export interface SkillCategory {
+  title: string;
+  icon: "code" | "settings" | "cloud" | "bot";
+  color: "blue" | "green" | "purple";
   skills: string[];
-  experience: WorkExperience[];
-  education: Education[];
-  contact: ContactInfo;
+}
+
+export interface Skills {
+  categories: SkillCategory[];
+}
+
+export interface ExperienceProject {
+  name: string;
+  description?: string;
+  achievements: string[];
 }
 
 export interface WorkExperience {
   company: string;
   position: string;
   duration: string;
-  projects: Project[];
+  accentColor: "primary" | "accent";
+  projects: ExperienceProject[];
 }
 
-export interface Project {
-  name: string;
-  description: string;
-  achievements: string[];
+export interface Experience {
+  jobs: WorkExperience[];
 }
 
-export interface Education {
+export interface EducationEntry {
   degree: string;
   field: string;
   institution: string;
   duration: string;
 }
 
-export interface ContactInfo {
-  email: string;
-  phone: string;
-  github: string;
-  linkedin: string;
+export interface Education {
+  entries: EducationEntry[];
 }

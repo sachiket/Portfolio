@@ -1,0 +1,34 @@
+jobs:
+  - company: Publicis Sapient
+    position: Senior Associate Technology L1
+    duration: April 2022 - Present
+    accentColor: primary
+    projects:
+      - name: Bodhi (Core AI Platform)
+        description: Publicis Groupe's enterprise scale AI platform for developing, deploying, and scaling AI solutions
+        achievements:
+          - Developed production grade AI agents with LangChain/LangGraph for campaign workflows
+          - Engineered Audience MCP Server middleware platform for AI agent orchestration
+          - Reduced campaign planning time by 50% for clients like Kellanova and Coke
+          - Built AI-driven microservices for clustering 1M+ records from Epsilon data centers
+      - name: ADEO / Abu Dhabi Housing Authority
+        achievements:
+          - Managed 2M+ government records, improved data retrieval by 30%
+          - Enhanced FAB banking integration for 41,000+ records, 50% performance boost
+          - Automated 20+ business processes using Camunda workflow management
+      - name: BJs Restaurant
+        achievements:
+          - Developed Order, Cart, and Auth microservices
+          - Built GraphQL APIs using Nest.js for improved scalability
+          - Improved system performance by 40% with Redis, MongoDB, and Oracle
+  - company: Capgemini
+    position: Sr Software Developer
+    duration: Aug 2020 - Apr 2022
+    accentColor: accent
+    projects:
+      - name: Boeing OnePDL
+        achievements:
+          - Enhanced scalability to handle 5TB+ daily data ingestion
+          - Improved forecasting model accuracy by 15% for U.S. defense programs
+          - Developed OnePDL ETL tool reducing operational delays by 20%
+          - Reduced server downtime by 40% and increased user satisfaction by 25%

@@ -1,5 +1,7 @@
 node_modules
 dist
+graphify-out
+.cursor
 .DS_Store
 server/public
 vite.config.ts.*

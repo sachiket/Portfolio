@@ -1,0 +1,13 @@
+segments:
+  - type: text
+    content: "Senior Software Engineer with "
+  - type: strong
+    content: "5+ years of experience"
+    color: primary
+  - type: text
+    content: " building scalable, Java-based microservices and cloud-native systems using Java, Spring Boot, Docker, and Kubernetes. Delivered AI-driven platforms that accelerated campaign workflows by "
+  - type: strong
+    content: "50%"
+    color: accent
+  - type: text
+    content: " for clients such as Coke and Kellanova, with expertise in AI technologies like LangChain and LangGraph."
